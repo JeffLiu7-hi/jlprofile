@@ -30,3 +30,47 @@ if (copyButton) {
     }
   });
 }
+
+const revealTargets = [
+  ...document.querySelectorAll('.hero, .panel, .project-row, .site-footer'),
+];
+
+revealTargets.forEach((element, index) => {
+  element.classList.add('reveal');
+  if (element.classList.contains('project-row')) {
+    element.style.setProperty('--reveal-delay', `${Math.min(index * 45, 260)}ms`);
+  }
+});
+
+const revealVisible = (element) => {
+  element.classList.add('is-visible');
+};
+
+const hideReveal = (element) => {
+  element.classList.remove('is-visible');
+};
+
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  revealTargets.forEach(revealVisible);
+} else {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          revealVisible(entry.target);
+        } else {
+          hideReveal(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.18,
+      rootMargin: '0px 0px -8% 0px',
+    }
+  );
+
+  revealTargets.forEach((element) => {
+    observer.observe(element);
+  });
+}
+
