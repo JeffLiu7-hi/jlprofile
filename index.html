@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeff Liu — Personal Site</title>
+    <meta name="description" content="Product-minded engineer crafting simple, thoughtful digital systems." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-gradient" aria-hidden="true"></div>
+    <div class="background-glow" aria-hidden="true"></div>
+    <div class="texture" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="logo" aria-label="Jeff Liu">JL</div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="resume" href="#contact">Connect</a>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <div class="eyebrow">Product-minded engineer</div>
+          <h1>
+            <span class="headline-primary">Personal Programming Insights.</span>
+            <span class="headline-secondary">Jeff Liu's personal website.</span>
+          </h1>
+          <p>I usually make minimal projects around whatever random curiosity I have that week.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="mailto:liujeff452@gmail.com">Say hello</a>
+            <a class="btn ghost" href="#projects">Browse projects</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="mickeyprofile.png" alt="Portrait of Jeff Liu" loading="lazy" />
+        </figure>
+      </section>
+
+      <section class="panel" id="about">
+        <div class="panel-heading">About</div>
+        <div class="panel-content about-intro">
+          <div class="about-copy">
+            <h2>Minimal projects, maximum curiosity.</h2>
+            <p>
+              I'm Jeff, an engineer who treats the web like a playground. Most weeks I'm chasing
+              a tiny question—Can onboarding feel calmer? Could this workflow be one tap?—and the
+              answer is usually a minimal project shipped into the wild.
+            </p>
+          </div>
+          <ul class="pill-list" aria-label="Focus areas">
+            <li>Casual utilities</li>
+            <li>Minimal games</li>
+            <li>Neural playgrounds</li>
+          </ul>
+        </div>
+        <div class="project-roll" id="projects" aria-label="Project list">
+          <article class="project-row">
+            <div class="project-row-meta">
+              <span class="project-label">Desktop utility</span>
+              <span class="project-sub">macOS · Windows · Linux</span>
+            </div>
+            <div class="project-row-body">
+              <h3>KeysoundGui</h3>
+              <p>Keyboard sound software for macOS, Windows and Linux.</p>
+            </div>
+            <div class="project-row-actions single">
+              <a class="project-row-cta" href="https://github.com/JeffLiu7-hi/keysound-gui" target="_blank" rel="noreferrer"
+                >Fork me on GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-row">
+            <div class="project-row-meta">
+              <span class="project-label">Web hub</span>
+              <span class="project-sub">Minecraft launchers</span>
+            </div>
+            <div class="project-row-body">
+              <h3>MCDLHub</h3>
+              <p>Minecraft launchers download hub.</p>
+            </div>
+            <div class="project-row-actions">
+              <a class="project-row-cta" href="https://mcdlhub.jeffliu777.xyz" target="_blank" rel="noreferrer"
+                >Get link</a
+              >
+              <a class="project-row-cta secondary" href="https://github.com/JeffLiu7-hi/mc-downloads" target="_blank" rel="noreferrer"
+                >Fork me on GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-row">
+            <div class="project-row-meta">
+              <span class="project-label">WeChat mini program</span>
+              <span class="project-sub">with <a href="https://github.com/kolafish" target="_blank" rel="noreferrer">kolafish</a></span>
+            </div>
+            <div class="project-row-body">
+              <h3>MyFlower</h3>
+              <p>WeChat Mini Program for managing plants.</p>
+            </div>
+            <div class="project-row-actions single">
+              <a class="project-row-cta" href="https://github.com/J-K-hhh/MyFlower" target="_blank" rel="noreferrer"
+                >Fork me on GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-row">
+            <div class="project-row-meta">
+              <span class="project-label">ML model</span>
+              <span class="project-sub">Handwritten digits</span>
+            </div>
+            <div class="project-row-body">
+              <h3>MyMNIST</h3>
+              <p>Simple MNIST CNN model that identifies handwritten numbers.</p>
+            </div>
+            <div class="project-row-actions single">
+              <a class="project-row-cta" href="https://github.com/J-K-hhh/MyMNIST" target="_blank" rel="noreferrer"
+                >Fork me on GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-row">
+            <div class="project-row-meta">
+              <span class="project-label">Mini game</span>
+              <span class="project-sub">Python</span>
+            </div>
+            <div class="project-row-body">
+              <h3>PyPacMan</h3>
+              <p>Simple Pac-Man game.</p>
+            </div>
+            <div class="project-row-actions">
+              <a class="project-row-cta" href="https://pypacman.jeffliu777.xyz" target="_blank" rel="noreferrer"
+                >Play Web Demo</a
+              >
+              <a class="project-row-cta secondary" href="https://github.com/JeffLiu7-hi/PyPacMan" target="_blank" rel="noreferrer"
+                >Fork me on GitHub</a
+              >
+            </div>
+          </article>
+          <article class="project-row">
+            <div class="project-row-meta">
+              <span class="project-label">Simulation</span>
+              <span class="project-sub">Particle playground</span>
+            </div>
+            <div class="project-row-body">
+              <h3>Fireworks</h3>
+              <p>Simple firework simulation app.</p>
+            </div>
+            <div class="project-row-actions">
+              <a class="project-row-cta" href="https://fireworks.jeffliu777.xyz">Watch it</a>
+              <a class="project-row-cta secondary" href="https://github.com/JeffLiu7-hi/Fireworks" target="_blank" rel="noreferrer"
+                >Fork me on GitHub</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="contact">
+        <div class="panel-heading">Contact</div>
+        <div class="panel-content contact">
+          <div>
+            <h2>Tell me about the thing you're building.</h2>
+            <p>
+              I love partnering with small teams chasing ideas. The best way to reach me is over
+              email.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <button class="btn primary" data-copy="liujeff452@gmail.com">Copy email</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Jeff Liu</span>
+      <span>Calm sites for intentional teams.</span>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
